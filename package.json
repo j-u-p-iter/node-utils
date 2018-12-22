@@ -1,0 +1,32 @@
+{
+  "name": "@j.u.p.iter/node-utils",
+  "version": "1.0.0",
+  "description": "Handy node-utils to optimize and speed up your workflow",
+  "main": "dist/lib/node-utils.cjs.js",
+  "module": "dist/lib/node-utils.esm.js",
+  "umd:main": "dist/lib/node-utils.umd.min.js",
+  "source": "dist/lib/node-utils.js",
+  "typings": "dist/types",
+  "repository": "git@github.com:j-u-p-iter/node-utils.git",
+  "author": "Leontyev Kirill (j.u.p.iter) <pn79122821224@gmail.com> (http://j-u-p-iter.pro/)",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "commit": "jupiter-scripts precommit --allowJs",
+    "build": "jupiter-scripts build --bundle",
+    "start": "yarn run build --watch",
+    "lint": "jupiter-scripts lint --format codeFrame",
+    "lint:fix": "yarn run lint --fix",
+    "test": "jupiter-scripts test"
+  },
+  "dependencies": {
+    "path-to-regexp": "^2.4.0"
+  },
+  "devDependencies": {
+    "@j.u.p.iter/jupiter-scripts": "1.2.1",
+    "@types/jest-in-case": "^1.0.0",
+    "jest-in-case": "^1.0.2"
+  }
+}
