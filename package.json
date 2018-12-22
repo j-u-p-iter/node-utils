@@ -1,6 +1,6 @@
 {
   "name": "@j.u.p.iter/node-utils",
-  "version": "1.0.1",
+  "version": "0.0.0-semantically-released",
   "description": "Handy node-utils to optimize and speed up your workflow",
   "main": "dist/lib/node-utils.cjs.js",
   "module": "dist/lib/node-utils.esm.js",
