@@ -1,6 +1,6 @@
 import cases from "jest-in-case";
 
-import { arePathsMatch } from "../.";
+import { arePathsMatch } from ".";
 
 describe("arePathsMatch(pathPattern, pathToCheck)", () => {
   cases(

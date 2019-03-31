@@ -1,19 +1,19 @@
-import qs from 'qs';
+import qs from "qs";
 
 export const makeUrl = ({
-  path = '',
-  protocol = 'http',
-  host = 'localhost',
+  host = "localhost",
+  path = "",
   port = 3000,
-  queryObject = {},
-}: { 
-  path?: string; 
-  protocol?: string; 
-  host?: string; 
-  port?: number; 
+  protocol = "http",
+  queryObject = {}
+}: {
+  host?: string;
+  path?: string;
+  port?: number | null;
+  protocol?: string;
   queryObject?: { [key: string]: number | string };
 } = {}): string => {
   const queryString = qs.stringify(queryObject, { addQueryPrefix: true });
 
-  return `${protocol}://${host}${port ? `:${port}` : ''}${path}${queryString}`
+  return `${protocol}://${host}${port ? `:${port}` : ""}${path}${queryString}`;
 };

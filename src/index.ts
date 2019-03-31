@@ -1,1 +1,2 @@
-export { arePathsMatch } from "./are-paths-match";
+export { arePathsMatch } from "./arePathsMatch";
+export { makeUrl } from "./makeUrl";
