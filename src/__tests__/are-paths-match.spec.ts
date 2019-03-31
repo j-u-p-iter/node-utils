@@ -16,7 +16,7 @@ describe("arePathsMatch(pathPattern, pathToCheck)", () => {
     [
       { pathPattern: "/some/path/to/compare/with" },
       { pathPattern: "/some/path/to/compare/:with" },
-      { pathPattern: "/some/path/:to/:compare/w:ith" }
+      { pathPattern: "/some/path/:to/:compare/with" }
     ]
   );
 });

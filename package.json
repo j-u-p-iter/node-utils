@@ -22,7 +22,9 @@
     "test": "jupiter-scripts test"
   },
   "dependencies": {
-    "path-to-regexp": "^2.4.0"
+    "@types/qs": "^6.5.2",
+    "path-to-regexp": "^2.4.0",
+    "qs": "^6.7.0"
   },
   "devDependencies": {
     "@j.u.p.iter/jupiter-scripts": "1.2.1",
