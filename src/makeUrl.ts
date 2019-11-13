@@ -1,19 +1,21 @@
 import qs from "qs";
 
 export const makeUrl = ({
+  path,
+  port,
   host = "localhost",
-  path = "",
-  port = 3000,
-  protocol = "http",
+  protocol = "https",
   queryObject = {}
 }: {
   host?: string;
   path?: string;
-  port?: number | null;
+  port?: number;
   protocol?: string;
   queryObject?: { [key: string]: number | string };
 } = {}): string => {
+  const preparedPort = port ? `:${port}` : "";
+  const preparedPath = path ? `/${path}` : "";
   const queryString = qs.stringify(queryObject, { addQueryPrefix: true });
 
-  return `${protocol}://${host}${port ? `:${port}` : ""}${path}${queryString}`;
+  return `${protocol}://${host}${preparedPort}${preparedPath}${queryString}`;
 };
